@@ -1,0 +1,320 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+.header-container 
+
+{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+	background-color: #AB9B96
+}
+
+.title
+
+{
+
+  grid-column: 2 / 3;
+  font-family: 'Megrim', cursive;
+  font-size: 90px;
+  margin-left: 20px !important
+}
+
+nav 
+{
+  grid-column: 3 / 4;
+  justify-self: end;
+  font-family: 'Megrim', cursive
+}
+
+nav ul
+
+{
+  display: flex;
+  list-style: none;
+  margin: 15;
+  padding: 0;
+}
+
+nav li
+{
+  margin: 0 40px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+h1
+
+{
+	color: white;
+	font-size: 80px;
+	margin: 0 100;
+	line-height: 80px;
+}
+
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  background-color: #a63a50;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100%;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.item img:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+
+ section 
+
+ {
+    background-color: #BA6E6E;
+    width: 100%;
+    height: 67vh;
+  }
+
+  .grid-container 
+
+  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+  }
+
+  article 
+
+  {
+    background-color: #BA6E6E;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    text-align: justify;
+    overflow: auto;
+    font-size: 20px;
+  padding: 20px;
+  background: linear-gradient(135deg, #BA6E6E, #D38E8E);
+  border: 2px solid #8c5a39;
+  color: #fff;
+  font-family: 'Megrim';
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+
+  }
+ article p 
+ {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+
+
+  aside 
+
+  {
+    background-color: #A1674A;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    overflow: auto;
+    padding: 30px;
+    display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  	background: linear-gradient(135deg, #BA6E6E, #D38E8E);
+  	border: 2px solid #8c5a39;
+    }
+
+
+footer
+{ font-family: 'Megrim', cursive; }
+
+/* MOBILE */
+
+@media only screen and (max-width: 767px) 
+
+{
+
+  .header-container 
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .title 
+  {
+    font-size: 50px;
+    margin: 20px !important;
+    text-align: center;
+  }
+  nav 
+  {
+    grid-column: initial;
+    justify-self: initial;
+    margin-top: 20px;
+  }
+  nav ul 
+  {
+    flex-direction: column;
+    margin: 0;
+  }
+  nav li 
+  {
+    margin: 10px 0;
+  }
+  nav a 
+  {
+    font-size: 20px;
+  }
+  h1 
+  {
+    font-size: 50px;
+    margin: 0 20px;
+    line-height: 50px;
+  }
+  .main-container
+  {
+    height: auto;
+    padding: 50px 0;
+  }
+  .container 
+  {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .item img 
+  {
+    width: 100%;
+  }
+  article 
+  {
+    grid-row: initial;
+    grid-column: initial;
+    font-size: 18px;
+    padding: 10px;
+  }
+  article p 
+  {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  aside 
+  {
+    grid-row: initial;
+    grid-column: initial;
+    padding: 20px;
+  }
+  
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 768px) 
+
+{
+
+  .header-container 
+  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+  }
+  .title 
+  {
+    font-size: 90px;
+    margin-left: 20px !important;
+  }
+  nav 
+  {
+    grid-column: 3 / 4;
+    justify-self: end;
+    margin-top: 0;
+  }
+  nav ul 
+  {
+    flex-direction: row;
+  }
+  nav li 
+  {
+    margin: 0 40px;
+  }
+  nav a 
+  {
+    font-size: 30px;
+  }
+  h1 
+  {
+    font-size: 80px;
+    margin: 0 100px;
+    line-height: 80px;
+  }
+  .main-container 
+  {
+    height: 70vh;
+    padding: 0;
+  }
+  .container 
+  {
+    grid-template-columns: 1fr;
+    grid-template-rows: 100%;
+  }
+  .item img 
+  {
+    width: auto;
+  }
+  article 
+  {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    font-size: 20px;
+    padding: 20px;
+  }
+  article p 
+  {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  aside 
+  {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    padding: 30px;
+  }
+}
+
+

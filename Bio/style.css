@@ -1,0 +1,212 @@
+*
+{
+  padding: 0;
+  margin: 0;
+}
+
+.header-container 
+
+{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+  background-color: #AB9B96
+}
+
+.title
+
+{
+
+  grid-column: 2 / 3;
+  font-family: 'Megrim', cursive;
+  font-size: 90px;
+  margin-left: 20px !important
+}
+
+nav 
+{
+  grid-column: 3 / 4;
+  justify-self: end;
+  font-family: 'Megrim', cursive
+}
+
+nav ul
+
+{
+  display: flex;
+  list-style: none;
+  margin: 15;
+  padding: 0;
+}
+
+nav li
+{
+  margin: 0 40px;
+}
+
+nav a 
+{
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+a:visited
+
+{
+  background-color: purple;
+  color: white;
+  font-size: 30px;
+}
+
+h1
+
+{
+  color: white;
+  font-size: 80px;
+  margin: 0 100;
+  line-height: 80px;
+}
+
+
+.main-container 
+{
+  display: flex;
+  justify-content: center;
+  background-color: #a63a50;
+}
+
+.left-container,
+.right-container 
+{
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(100deg, #a63a50, indianred);
+  border: 2px solid #a63a50;
+  color: #fff;
+  font-family: 'Megrim';
+  text-align: justify;
+  font-size: 19;
+}
+
+.right-container 
+{
+  align-items: center;
+}
+
+.item 
+{
+  max-width: 100%;
+  padding: 20px;
+}
+
+.foto
+{
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  transition: transform 0.3s ease-in-out;
+}
+.foto:hover 
+{
+  transform: scale(1.09);
+}
+
+p 
+{
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+p:hover 
+{
+  color: blanchedalmond;
+}
+
+p:hover::after 
+{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #1e90ff;
+  transform: scaleX(1);
+  transform-origin: center;
+  transition: all 0.3s ease-in-out;
+}
+
+p::after 
+{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: #1e90ff;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: all 0.3s ease-in-out;
+}
+
+
+footer
+{ font-family: 'Megrim', cursive; }
+h2
+{
+  font-size: 18;
+}
+
+
+
+/* Mobile styles */
+@media only screen and (max-width: 767px) 
+
+{
+  .header-container
+
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .title 
+  {
+    margin: 20px 0;
+    font-size: 70px;
+  }
+
+  nav 
+  {
+    margin-bottom: 10px;
+  }
+
+  nav li 
+  {
+    margin: 10px 0;
+    padding: 10;
+  }
+  
+  .main-container 
+  {
+    flex-direction: column;
+  }
+  
+  .left-container,
+  .right-container 
+
+  {
+    flex-basis: 100%;
+  }
+
+}
